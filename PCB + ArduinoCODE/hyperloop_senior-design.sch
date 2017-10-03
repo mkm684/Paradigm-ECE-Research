@@ -690,17 +690,6 @@ F 3 "" H 3750 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D8
-U 1 1 59D232E7
-P 4050 3250
-F 0 "D8" H 4050 3350 50  0000 C CNN
-F 1 "LED" H 4050 3150 50  0000 C CNN
-F 2 "LEDs:LED_0805" H 4050 3250 50  0001 C CNN
-F 3 "" H 4050 3250 50  0001 C CNN
-	1    4050 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L LED D5
 U 1 1 59D2336F
 P 3150 3250
@@ -723,10 +712,6 @@ Wire Wire Line
 	3750 3100 3750 2900
 Wire Wire Line
 	3750 2900 5150 2900
-Wire Wire Line
-	5150 3000 4050 3000
-Wire Wire Line
-	4050 3000 4050 3100
 $Comp
 L R R1
 U 1 1 59D23798
@@ -761,17 +746,6 @@ F 3 "" H 3750 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
-U 1 1 59D239A0
-P 4050 3600
-F 0 "R4" V 4130 3600 50  0000 C CNN
-F 1 "R" V 4050 3600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3980 3600 50  0001 C CNN
-F 3 "" H 4050 3600 50  0001 C CNN
-	1    4050 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR010
 U 1 1 59D23BCF
 P 3600 3950
@@ -785,18 +759,12 @@ $EndComp
 Wire Wire Line
 	3150 3750 3150 3950
 Wire Wire Line
-	3150 3950 4050 3950
-Wire Wire Line
 	3450 3750 3450 3950
 Connection ~ 3450 3950
 Wire Wire Line
 	3750 3950 3750 3750
 Connection ~ 3600 3950
-Wire Wire Line
-	4050 3950 4050 3750
 Connection ~ 3750 3950
-Wire Wire Line
-	4050 3450 4050 3400
 Wire Wire Line
 	3750 3450 3750 3400
 Wire Wire Line
@@ -921,4 +889,7 @@ Wire Wire Line
 	7200 2050 7700 2050
 NoConn ~ 6350 2900
 NoConn ~ 6350 3000
+Wire Wire Line
+	3150 3950 3750 3950
+NoConn ~ 5150 3000
 $EndSCHEMATC
